@@ -42,7 +42,6 @@ test:
     - multirtc
   commands:
     - pip check
-    - prep_burst --help
     - multirtc --help
   requires:
     - python {{ python_min }}
