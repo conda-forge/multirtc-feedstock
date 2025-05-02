@@ -1,5 +1,5 @@
 {% set name = "multirtc" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/multirtc-{{ version }}.tar.gz
-  sha256: 526487600722b67504fca5339d2d609141c8e08f4dfae5bd1be20bf61a9b201f
+  sha256: a932a6770ddd0d7eeacdc77a8ee0fd1794528c794a78f3ff71d17aaa1fa67560
 
 build:
   entry_points:
-    - prep_burst = multirtc.prep_burst:main
     - multirtc = multirtc.multirtc:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -43,7 +42,6 @@ test:
     - multirtc
   commands:
     - pip check
-    - prep_burst --help
     - multirtc --help
   requires:
     - python {{ python_min }}
