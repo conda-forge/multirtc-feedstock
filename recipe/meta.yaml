@@ -1,5 +1,5 @@
 {% set name = "multirtc" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/multirtc-{{ version }}.tar.gz
-  sha256: 05e93c6cb90341e9496b72df588a2492a39f7017350f0516580c4fa204ac44da
+  sha256: ca8dfa1e8541847cb520eebf83fff4bc7c102929b48c70464f135b445acec3fd
 
 build:
   entry_points:
