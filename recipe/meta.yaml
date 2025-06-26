@@ -37,7 +37,7 @@ requirements:
     - burst2safe
     - tqdm
     - hyp3lib
-    - matplotlib
+    - matplotlib-base
     - pandas
     - lmfit
     - scipy
