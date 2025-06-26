@@ -49,6 +49,7 @@ test:
     - pip check
     - multirtc --help
     - multirtc rtc
+    - multirtc ale
   requires:
     - python {{ python_min }}
     - pip
