@@ -48,10 +48,6 @@ test:
   commands:
     - pip check
     - multirtc --help
-    - multirtc rtc --help
-    - multirtc ale --help
-    - multirtc rle --help
-    - multirtc pt --help
   requires:
     - python {{ python_min }}
     - pip
