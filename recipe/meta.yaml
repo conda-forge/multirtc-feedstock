@@ -1,5 +1,5 @@
 {% set name = "multirtc" %}
-{% set version = "0.3.3" %}
+{% set version = "0.4.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/multirtc-{{ version }}.tar.gz
-  sha256: 13485dfa1cc183ce7d622b978e715e5ba991d5015f5d122395f66622805bd71a
+  sha256: 20f1422ae50cfac402faec4177c82b6055135e4528a0a5ba89d990c979342a90
 
 build:
   entry_points:
@@ -37,7 +37,11 @@ requirements:
     - burst2safe
     - tqdm
     - hyp3lib
-
+    - matplotlib-base
+    - pandas
+    - lmfit
+    - scipy
+    - scikit-image
 test:
   imports:
     - multirtc
