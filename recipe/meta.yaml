@@ -12,7 +12,7 @@ source:
 
 build:
   entry_points:
-    - multirtc = multirtc.multirtc:main
+    - multirtc = multirtc.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 1
@@ -48,8 +48,7 @@ test:
   commands:
     - pip check
     - multirtc --help
-    - multirtc rtc
-    - multirtc ale
+    - multirtc rtc --help
   requires:
     - python {{ python_min }}
     - pip
