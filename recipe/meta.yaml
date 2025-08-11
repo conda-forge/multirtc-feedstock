@@ -1,5 +1,5 @@
 {% set name = "multirtc" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/multirtc-{{ version }}.tar.gz
-  sha256: 20f1422ae50cfac402faec4177c82b6055135e4528a0a5ba89d990c979342a90
+  sha256: f2b91ca867f8a397bca1820bb59324ee816f688a28445be6e8dea46244c0510d
 
 build:
   entry_points:
@@ -49,6 +49,7 @@ test:
     - pip check
     - multirtc --help
     - multirtc rtc --help
+    - multirtc geocode --help
   requires:
     - python {{ python_min }}
     - pip
