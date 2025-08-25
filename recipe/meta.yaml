@@ -15,7 +15,7 @@ build:
     - multirtc = multirtc.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -36,7 +36,8 @@ requirements:
     - sarpy
     - burst2safe
     - tqdm
-    - hyp3lib
+    - requests
+    - urllib3
     - matplotlib-base
     - pandas
     - lmfit
