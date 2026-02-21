@@ -1,5 +1,5 @@
 {% set name = "multirtc" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/multirtc-{{ version }}.tar.gz
-  sha256: a189135200749976e867ecd7aa27ef76cde3f8d1b4604f20a41e8aabbd807c28
+  sha256: c47dff6ead7af43c3b76b61aa1c3c1eaad17a02338e63609b29d335f38056792
 
 build:
   entry_points:
@@ -64,3 +64,6 @@ about:
 extra:
   recipe-maintainers:
     - forrestfwilliams
+    - Alex-Lewandowski
+    - glshort
+    - jhkennedy
